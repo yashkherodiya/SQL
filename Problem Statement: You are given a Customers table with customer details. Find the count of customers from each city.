@@ -1,0 +1,14 @@
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    City VARCHAR(50)
+);
+
+INSERT INTO Customers VALUES
+(1, 'Yash', 'Udaipur'),
+(2, 'Ravi', 'Jaipur'),
+(3, 'Aman', 'Udaipur'),
+(4, 'Neha', 'Delhi'),
+(5, 'Priya', 'Jaipur');
+
+select city,count(*) from Customers group by City;

@@ -1,0 +1,16 @@
+show databases;
+use pracdb;
+CREATE TABLE Sales (
+    SaleID INT,
+    ProductName VARCHAR(50),
+    QuantitySold INT,
+    PricePerUnit DECIMAL(10,2)
+);
+
+INSERT INTO Sales VALUES
+(1, 'Wheat', 10, 20.50),
+(2, 'Rice', 5, 30.00),
+(3, 'Corn', 8, 15.00),
+(4, 'Wheat', 6, 20.50);
+
+select sum(QuantitySold*PricePerUnit) total_revenue from Sales;

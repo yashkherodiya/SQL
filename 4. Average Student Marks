@@ -1,0 +1,14 @@
+CREATE TABLE Students (
+    StudentID INT,
+    Name VARCHAR(50),
+    Marks INT
+);
+
+INSERT INTO Students VALUES
+(1, 'Yash', 85),
+(2, 'Ravi', 90),
+(3, 'Aman', 75),
+(4, 'Neha', 95),
+(5, 'Priya', 80);
+
+select avg(marks) avg_marks from Students;

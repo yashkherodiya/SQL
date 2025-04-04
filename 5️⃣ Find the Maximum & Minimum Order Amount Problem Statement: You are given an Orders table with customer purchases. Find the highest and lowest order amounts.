@@ -1,0 +1,14 @@
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderAmount DECIMAL(10,2)
+);
+
+INSERT INTO Orders VALUES
+(101, 1, 250.75),
+(102, 2, 300.00),
+(103, 3, 450.50),
+(104, 1, 120.25),
+(105, 2, 310.00);
+
+select max(OrderAmount) as Maximum_Amount, min(OrderAmount) as Minimum_Amount from Orders;

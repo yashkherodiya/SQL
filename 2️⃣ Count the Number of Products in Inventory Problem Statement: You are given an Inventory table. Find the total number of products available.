@@ -1,0 +1,14 @@
+CREATE TABLE Inventory (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(50),
+    QuantityInStock INT
+);
+
+INSERT INTO Inventory VALUES
+(1, 'Laptop', 10),
+(2, 'Mobile', 15),
+(3, 'Tablet', 8),
+(4, 'Monitor', 12),
+(5, 'Keyboard', 20);
+
+select sum(QuantityInStock) as Total_Number_of_Product from Inventory;
